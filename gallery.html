@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Beckers</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="icons/B-letter.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="cycle2.js"></script>
+    </head>
+    <body>
+        
+        <header class="main-header">
+            <div class="main-logo"><img class="logo" src="icons/Logo2.jpg"></div>
+            <ul class="nav">
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="mrandmrs.html">Mr. &AMP; Mrs.</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="gallery.html" class="selected">Gallery</a></li>
+                <li><a href="details.html">Details</a></li>
+            </ul>
+        </header> <!--/.header-->
+            
+        <div class="banner">
+            <div id="container">
+        <div id="slideshow" class="cycle-slideshow" 
+             data-cycle-fx = "fade"  
+             data-cycle-speed = "600"
+             data-cycle-timeout = "3000"
+             data-cycle-pager = "#pager"
+             data-cycle-pager-template ="<a href='#'><img src='{{src}}' width = 120 height= 80></a>"
+             data-cycle-next = "#next"
+             data-cycle-prev = "#prev"
+             data-cycle-manual-fx = "scrollVert"
+             data-cycle-manual-speed ="400"
+             data-cycle-pager-fx = "fade">
+            <img src="img/kiss.jpg" alt=""> 
+            <img src="img/ski.JPG" alt="">
+            <img src="img/boat.JPG" alt="">
+            <img src="img/sunset.JPG" alt="">
+            <img src="img/grass.jpg" alt="">
+            <img src="img/mile39.JPG" alt="">
+            <img src="img/canyon.JPG" alt="">
+            <img src="img/Family.jpg" alt="">
+            <img src="img/beach.JPG" alt="">
+            <img src="img/hike.JPG" alt="">
+            <img src="img/moosedrug.JPG" alt="">
+            <img src="img/ring.PNG" alt="">
+            
+            </div>
+
+            <div id="pager"></div>
+            <img id="prev" src="img/prev1.svg">
+            <img id="next" src="img/next1.svg">
+        </div>
+            <! -- div container for mobile -->
+            
+        <div class="gallerymobile">
+            <div class="gallery">
+                <a class="_blank" href="img/kiss.jpg">
+                    <img src="img/kiss.jpg" alt="kiss" width="300" height="200">
+                </a> 
+            </div>
+            <div class="gallery">
+                <a class="_blank" href="img/ski.JPG">
+                    <img src="img/ski.JPG" alt="ski trip" width="300" height="200">
+                </a> 
+            </div>
+            <div class="gallery">
+                <a class="_blank" href="img/boat.JPG">
+                    <img src="img/boat.JPG" alt="boat" width="300" height="200">
+                </a> 
+            </div>
+            <div class="gallery">
+                <a class="_blank" href="img/sunset.JPG">
+                    <img src="img/sunset.JPG" alt="sunset" width="300" height="200">
+                </a> 
+            </div>
+            <div class="gallery">
+                <a class="_blank" href="img/grass.jpg">
+                    <img src="img/grass.jpg" alt="" width="300" height="200">
+                </a> 
+            </div>
+            <div class="gallery">
+                <a class="_blank" href="img/mile39.JPG">
+                    <img src="img/mile39.JPG" alt="mile marker 39" width="300" height="200">
+                </a> 
+            </div>
+            <div class="gallery">
+                <a class="_blank" href="img/ring.PNG">
+                    <img src="img/ring.PNG" alt="enagement" width="300" height="200">
+                </a> 
+            </div>
+            <div class="gallery">
+                <a class="_blank" href="img/Family.jpg">
+                    <img src="img/Family.jpg" alt="Becker Family" width="300" height="200">
+                </a> 
+            </div>
+            <div class="gallery">
+                <a class="_blank" href="img/beach.JPG">
+                    <img src="img/beach.JPG" alt="beach" width="300" height="200">
+                </a> 
+            </div>
+            <div class="gallery">
+                <a class="_blank" href="img/moosedrug.JPG">
+                    <img src="img/moosedrug.JPG" alt="a moose" width="300" height="200">
+                </a> 
+            </div>
+        </div>
+    
+        </div> <!--/.banner-->
+        
+        <footer class="main-footer">
+            <span>&copy; 2017 The Beckers</span>
+        </footer>
+        
+    </body>
+</html>

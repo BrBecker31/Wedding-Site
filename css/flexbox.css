@@ -1,0 +1,58 @@
+/**********************
+Media Queries
+**********************/
+
+@media (min-width: 769px) {
+    .main-header,
+    .nav,
+    .content {
+        display: flex;
+    }
+    
+    .main-header {
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    .col {
+        flex: 1 50%;
+    }
+    
+    .content {
+        flex-wrap: wrap;
+    }
+    
+    .secondary {
+        order: -1;
+    }
+    
+    li:last-child a {
+      background: rgba(255,255,255,0.3);
+      border-radius: 2px;
+      transition: 200ms ease-in-out;
+    }
+
+     li:last-child a:hover {
+      background: rgba(255,255,255,0.5);
+      color: #fff;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .logo{
+        margin-top: -40px;
+    }
+    
+    .primary{
+        flex-grow: 1.4;
+    }
+    .col {
+        flex-basis: 0;
+    }
+   
+}

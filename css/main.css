@@ -1,0 +1,298 @@
+/**********************
+CUSTOM FONTS
+**********************/
+
+
+
+@font-face {
+    font-family: bettynoir;
+    src: url('../fonts/bettynoir.ttf');
+}
+
+@font-face {
+    font-family: birminhamBold;
+    src: url('../fonts/BirminghamBold.ttf');
+}
+
+
+@font-face {
+    font-family: Gatsby;
+    src: url('../fonts/GatsbyFLF-Bold.ttf');
+}
+
+@font-face {
+    font-family: parklane;
+    src: url('../fonts/parklane.ttf');
+}
+
+@font-face {
+    font-family: riesling;
+    src: url('../fonts/riesling.ttf');
+}
+
+@font-face {
+    font-family: roarintwenties;
+    src: url('../fonts/roarintwenties.ttf');
+}
+
+
+
+/**********************
+Base Element Styles
+**********************/
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roarintwenties;
+    line-height: 1.5;
+    background-color: #171717;
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p{
+    font-family: Gatsby;
+    font-size: 200%;
+    margin-bottom: 1.5em;
+    color: white;
+}
+
+h1,h2, h3, a { 
+    color: goldenrod;
+}
+
+h1, h2, h3 {
+    font-family: birminhamBold;
+    font-size: 200%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.us{
+    max-width: 80%;
+}
+
+/*
+.content {
+    padding: 0 5em;
+}
+*/
+
+img{
+    max-width:100%;
+}
+/**********************
+Base Layout Styles
+**********************/
+
+
+/* --- Navigation --- */
+
+.main-logo { 
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+.logo {
+    height: 120px;
+}
+
+.nav {
+    display: block;
+}
+.nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    font-family: parklane;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.selected{
+    color: white;
+}
+/* --- Layout Containers ---*/
+
+.main-header{
+    padding-top: .5em;
+    padding-bottom: .7em;
+    background-color: black;
+    border-bottom: .2em goldenrod solid;
+   
+}
+
+.banner, .main-footer, .center {
+    text-align: center;
+}
+
+.banner{
+    background: #171717;
+    padding: .3em; 
+}
+
+.banner h1{
+    font-family: gatsby;
+    margin-top: -5px;
+}
+
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.main-footer{
+    background: black;
+    padding: 2em 0;
+    color:goldenrod;
+    font-family: parklane;
+    font-size: large;
+}
+
+
+
+/**********************
+Gallery
+**********************/
+
+#container{
+            width: 100%;
+            height: 704px;
+            position: relative;
+            overflow: hidden;
+            background: #171717;
+        }
+        
+        #slideshow {
+            height: 100%;
+            width: 100;
+            
+        }
+        
+        #slideshow img {
+            height: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right:0;
+            bottom:0;
+            
+
+        }
+        
+        #pager {
+            width: 100%
+            height: 120px;
+            position: absolute;
+            bottom: 0;
+            background: black;
+            z-index: 1000;
+            opacity: 0;
+            transition: all 0.3s ease-in-out 0s;
+            text-align: center;
+        }
+        
+        #pager:hover {
+            opacity: 1;
+        }
+        
+        #prev {
+            height: 120px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto 50px;
+            z-index: 1000;
+        }
+        
+        #next {
+            height: 120px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto 50px;
+            z-index: 1000;
+        }
+        
+        #pager img { 
+            margin: 10px 10px;
+            opacity: 0.3;
+            transition: all .3s ease-in-out 0s;
+        }
+        
+        #pager img:hover {
+            opacity: 1;
+            transform: scale(1.05);
+            z-index: 100px;
+        }
+
+.gallerymobile img {
+    border: 2px solid black;
+
+}
+
+.gallerymobile img:hover {
+    border: 2px solid white;
+}
+
+@media (max-width: 769px){
+    #container{
+        display: none;
+    }
+}
+
+
+
+/**********************
+Media Queries
+**********************/
+
+@media (min-width: 769px) {
+    .content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .banner {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+    .gallerymobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px){
+    .content {
+        width: 80%;
+        max-width: 1150px;
+    }
+    . banner {
+        width:90%;
+        max-width: 1200px;
+        padding-top: 2em;
+    }
+}
+
+
+
+
